@@ -1,5 +1,5 @@
 import React from "react";
-import { actions } from "./store/countStore";
+import { connect, actions } from "./store/store";
 
 const Button = () => <button onClick={() => actions.increment()}>up</button>;
 

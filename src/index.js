@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { Provider } from "./store/countStore";
+import { Provider } from "./store/store";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(

@@ -1,10 +1,8 @@
-import { initStore } from "react-waterfall";
-import reduxDevTools from "react-waterfall-redux-devtools-middleware";
+import createStore from "react-waterfall";
 import merge from "lodash/merge";
 
-import userStore from "./user.store.js";
-import programStore from "./program.store.js";
+import countStore from "./countStore";
 
-const store = merge(userStore, programStore);
+const store = merge(countStore);
 
-export const { Provider, connect } = initStore(store, reduxDevTools());
+export const { Provider, connect, actions } = createStore(store);
